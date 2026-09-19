@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submarine CFD Analysis — Reazwan Ahmed</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    :root { --accent: #5b9bd5; }
+    .cfd-tag {
+      display: inline-block;
+      background: rgba(91,155,213,0.12);
+      color: var(--accent);
+      border: 1px solid rgba(91,155,213,0.3);
+      border-radius: 20px;
+      padding: 4px 14px;
+      font-size: 0.75rem;
+      letter-spacing: 0.05em;
+      margin-bottom: 1.5rem;
+    }
+    .tech-card:hover {
+      border-color: rgba(91,155,213,0.4);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.65);
+      transform: translateY(-3px);
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="site-name">Reazwan Ahmed</a>
+    <nav class="header-nav">
+      <a href="https://www.linkedin.com/in/reazwan-ahmed-b63a71216/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://makerworld.com/en/@ShadowLord" target="_blank" rel="noopener">MakerWorld</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-wrap">
+
+  <a href="index.html" class="back-link">&#8592; Back to Portfolio</a>
+
+  <!-- Hero -->
+  <div class="proj-hero" style="grid-template-columns: 55% 45%; padding-bottom:36px;">
+    <div>
+      <img src="https://myportfolioreazwan.com/wp-content/uploads/2026/09/Screenshot-2026-03-19-134854.png"
+           alt="Velocity streamlines side view"
+           style="width:100%; border-radius:6px;">
+    </div>
+    <div>
+      <h1>Submarine CFD Analysis</h1>
+      <p>Steady-state RANS simulation of a full-scale submarine fully submerged at 20&nbsp;km/h (5.556&nbsp;m/s) using Ansys Fluent 2024 R2 with the k-ω SST turbulence model. A Reynolds number of 1.216&nbsp;×&nbsp;10⁸ confirmed fully turbulent flow across the hull. A 6.27-million-element unstructured tetrahedral mesh with an average orthogonal quality of 0.767 was generated to resolve the boundary layer and wake regions accurately.</p>
+      <p>Drag converged to approximately 33,500&nbsp;N and lift to approximately 3,500&nbsp;N downward. The key validation came from the bow stagnation pressure: 15,410&nbsp;Pa simulated against 15,414&nbsp;Pa theoretical — a 0.03% error that confirmed the solver setup and mesh were correctly capturing the fundamental flow physics.</p>
+    </div>
+  </div>
+
+  <!-- Metrics row -->
+  <div class="metrics-row">
+    <div class="metric-card">
+      <div class="metric-val">1.216 &times; 10<sup>8</sup></div>
+      <div class="metric-lbl">Reynolds number<br>fully turbulent flow</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-val">6.27M</div>
+      <div class="metric-lbl">mesh elements<br>avg quality 0.767</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-val">~33,500 N</div>
+      <div class="metric-lbl">total drag force<br>converged</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-val">0.03%</div>
+      <div class="metric-lbl">stagnation pressure<br>error vs theory</div>
+    </div>
+  </div>
+
+  <p class="section-lbl">Technical breakdown</p>
+
+  <!-- Three tech cards -->
+  <div class="tech-cards-3">
+
+    <div class="tech-card">
+      <div class="swiper" id="sw-mesh">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2026/09/Screenshot-2026-03-19-121846.png" alt="Mesh cross-section"><figcaption>Mesh cross-section</figcaption></figure></div>
+          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2026/09/Screenshot-2026-03-19-114743.png" alt="Mesh isometric"><figcaption>Mesh isometric</figcaption></figure></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <h3>Mesh &amp; Setup</h3>
+      <p>A multi-zone unstructured tetrahedral mesh was generated in Ansys Meshing — fine element density at the hull surface, conning tower, and antenna appendages, coarsening progressively through the far field. The 6.27M-element mesh achieved an average orthogonal quality of 0.767. Boundary conditions: velocity inlet at 5.556&nbsp;m/s, pressure outlet, symmetry plane along the hull centreline, and no-slip walls on all submarine surfaces.</p>
+    </div>
+
+    <div class="tech-card">
+      <div class="swiper" id="sw-flow">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2026/09/Screenshot-2026-03-19-134854.png" alt="Velocity — YZ plane"><figcaption>Velocity — YZ plane</figcaption></figure></div>
+          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2026/09/Screenshot-2026-03-19-134950.png" alt="Velocity — XZ plane"><figcaption>Velocity — XZ plane</figcaption></figure></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <h3>Flow Results</h3>
+      <p>Velocity streamlines showed fully attached flow along the main cylindrical hull and clean acceleration around the sail geometry. Drag converged to ~33,500&nbsp;N and lift to ~3,500&nbsp;N downward. The stagnation pressure at the bow nose — 15,410&nbsp;Pa simulated vs 15,414&nbsp;Pa theoretical — validated the simulation to 0.03% of the analytical prediction, confirming correct solver configuration and mesh resolution.</p>
+    </div>
+
+    <div class="tech-card">
+      <div class="swiper" id="sw-press">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2026/09/Screenshot-2026-03-19-135147.png" alt="3D pressure surface"><figcaption>Pressure surface</figcaption></figure></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <h3>Pressure &amp; Drag Analysis</h3>
+      <p>The 3D pressure contour mapped onto the submarine surface identifies the primary drag sources: the red high-pressure stagnation region at the bow, and the marked low-pressure zones behind the conning tower and aft appendages. Streamline analysis confirmed these appendages generate disproportionate drag through flow separation relative to their size — the dominant design consideration for submarine appendage geometry optimisation.</p>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const cfg = {
+    loop: true,
+    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+    pagination: { el: '.swiper-pagination', clickable: true },
+  };
+  new Swiper('#sw-mesh', cfg);
+  new Swiper('#sw-flow', cfg);
+  new Swiper('#sw-press', cfg);
+</script>
+
+</body>
+</html>

@@ -3,24 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Steering Knuckle Design — Reazwan Ahmed</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-  <link rel="stylesheet" href="../style.css">
-  <style>
-    :root { --accent: #c8a86a; }
-    .proj-tag { background: rgba(200,168,106,0.12); color: var(--accent); border: 1px solid rgba(200,168,106,0.3); }
-    .img-card:hover { border-color: rgba(200,168,106,0.4); box-shadow: 0 6px 28px rgba(200,168,106,0.15); }
-    .tech-divider { color: var(--accent); opacity: 1; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.55); }
-    .dc-note { border-left-color: var(--accent); }
-    .brief-meta { color: var(--accent); }
-    .brief-icon { background: rgba(200,168,106,0.1); border: 1px solid rgba(200,168,106,0.25); }
-  </style>
+  <title>Reazwan Ahmed</title>
+  <meta name="description" content="First Class BEng Mechanical Engineering graduate — FEA, CFD, CAD, and product design.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="site-header">
   <div class="header-inner">
-    <a href="../" class="site-name">Reazwan Ahmed</a>
+    <a href="./" class="site-name">Reazwan Ahmed</a>
     <nav class="header-nav">
       <a href="https://www.linkedin.com/in/reazwan-ahmed-b63a71216/" target="_blank" rel="noopener">LinkedIn</a>
       <a href="https://makerworld.com/en/@ShadowLord" target="_blank" rel="noopener">MakerWorld</a>
@@ -28,153 +19,162 @@
   </div>
 </header>
 
-<div class="page-wrap">
+<main>
 
-  <a href="../" class="back-link">&#8592; Back to Portfolio</a>
-
-  <!-- Hero -->
-  <div class="proj-hero" style="grid-template-columns: 50% 50%;">
-    <div>
-      <img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/image-1.png"
-           alt="JLR rear suspension knuckle in assembly"
-           style="width:100%; border-radius:6px;">
+  <!-- ── Hero ── -->
+  <div class="hero">
+    <div class="hero-photo">
+      <img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/1744772656297.jpg" alt="Reazwan Ahmed" loading="lazy">
     </div>
-    <div>
-      <h1>JLR Suspension Knuckle</h1>
-      <span class="proj-tag">Industry Live Brief &middot; JLR &times; Kingston University</span>
-      <p>Ravi Londhe (Lead CAE Simulation Automation Engineer) from Jaguar Land Rover assigned our team a live industry brief: create a one-piece suspension knuckle for use in an automotive suspension system that meets three performance targets: mass reduction, structural stiffness, and natural frequency. Working on a five-person team, I was in charge of structural FEA and additive manufacturing feasibility research.</p>
-      <p>The knuckle was redesigned in A356 aluminium (66% mass reduction compared to the original cast steel baseline, with sand casting and post-process CNC machining chosen as the best manufacturing method). ANSYS Workbench validated the design exceeded all three objectives: peak stress at 13% of material yield, deformation &lt; 0.02 mm, and safety factors above 5 under static and harmonic loading.</p>
+    <div class="hero-bio">
+      <h1>Hello, I am <strong>Reazwan</strong></h1>
+      <p>First Class BEng (Hons) Mechanical Engineering graduate with hands-on experience in automotive systems, fluid dynamics, and machine design, with a focus on design and simulation.</p>
+      <p>Skilled in FEA (ANSYS Workbench), CFD (ANSYS Fluent), parametric 3D modelling (CSWP certified SolidWorks), FDM 3D printing, and microcontroller integration (Arduino/ESP32), with a strong track record of delivering technical solutions from concept to physical prototype.</p>
+      <p>I welcome connections with professionals passionate about mechanical design, product development, and simulation.</p>
+      <div class="hero-links">
+        <a href="https://www.linkedin.com/in/reazwan-ahmed-b63a71216/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="#" target="_blank">Instagram</a>
+      </div>
+      <a href="https://myportfolioreazwan.com/wp-content/uploads/2025/04/REAZWAN-CV.pdf" target="_blank" rel="noopener" class="cv-btn">Download CV – Reazwan Ahmed</a>
     </div>
   </div>
 
-  <p class="tech-divider">Technical Breakdown</p>
+  <!-- ── Portfolio ── -->
+  <div class="section-wrap" id="portfolio">
+    <h2 class="section-h2">Portfolio Projects &amp; Designs</h2>
+    <div class="projects-grid">
 
-  <!-- Model & Assembly -->
-  <div class="row-2col" style="grid-template-columns: 47% 53%;">
-    <div class="img-card">
-      <div class="swiper" id="sw-model">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/picture4-1.png" alt="Assembly"><figcaption>Assembly</figcaption></figure></div>
-          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/picture5-1.png" alt="Assembly"><figcaption>Assembly</figcaption></figure></div>
-          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/picture6-1.png" alt="Assembly"><figcaption>Assembly</figcaption></figure></div>
-          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/picture2.png" alt="3D Model"><figcaption>3D Model</figcaption></figure></div>
-          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/picture3-1.png" alt="3D Model"><figcaption>3D Model</figcaption></figure></div>
-          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2026/05/part-drawing.png" alt="Engineering Drawing"><figcaption>Engineering Drawing</figcaption></figure></div>
+      <a href="steering-knuckle-design.html" class="project-card">
+        <div class="card-img">
+          <img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/image-1.png" alt="JLR Knuckle" loading="lazy">
         </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </div>
-    </div>
-    <div>
-      <h3>Model &amp; Assembly</h3>
-      <p class="sm">The knuckle was designed from scratch in Fusion 360, with supporting suspension components modelled in SolidWorks. Both were assembled into a representative suspension system for integration validation, ensuring proper fitting and clearance at all mounting interfaces before going into production.</p>
-      <p>Industry-standard design methods were used throughout: precise draft angles for casting, tolerancing on all mating faces, and geometry suited for fabrication and assembly. A fully detailed engineering drawing was created, ready to be handed over to the manufacturer.</p>
-    </div>
-  </div>
+        <h3>Steering Knuckle Design</h3>
+        <p>Redesigned a JLR rear suspension knuckle from cast steel to A356 aluminium — ~66% weight reduction. Validated with static and frequency-response FEA in ANSYS. Max stress at 13% of yield, FoS above 5. Led DFMEA across a five-person team.</p>
+      </a>
 
-  <!-- FEA -->
-  <div class="row-2col" style="grid-template-columns: 47% 53%;">
-    <div class="img-card">
-      <div class="swiper" id="sw-fea">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/picture7-1.png" alt="Mesh"><figcaption>Mesh</figcaption></figure></div>
-          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/picture9.png" alt="Force / Load"><figcaption>Force / Load</figcaption></figure></div>
-          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/equivalent-von-mises-stress1.png" alt="Von Mises stress"><figcaption>Von Mises stress</figcaption></figure></div>
-          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/equivalent-von-mises-stress.png" alt="Von Mises stress — critical region"><figcaption>Von Mises stress — critical region</figcaption></figure></div>
-          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/picture12.png" alt="Total deformation"><figcaption>Total deformation</figcaption></figure></div>
-          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/picture11.png" alt="Total deformation — detail"><figcaption>Total deformation — detail</figcaption></figure></div>
-          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/equivalent-von-mises-strain2.png" alt="Normal strain"><figcaption>Normal strain</figcaption></figure></div>
-          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/equivalent-von-mises-strain.png" alt="Normal strain — critical region"><figcaption>Normal strain — critical region</figcaption></figure></div>
-          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2026/05/harnoniuc-rsponse-stress-1.png" alt="Harmonic response — stress"><figcaption>Harmonic response — stress</figcaption></figure></div>
-          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2026/05/harnoniuc-rsponse-deformation.png" alt="Harmonic response — deformation"><figcaption>Harmonic response — deformation</figcaption></figure></div>
-          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2026/05/harnoniuc-rsponse-strain.png" alt="Harmonic response — strain"><figcaption>Harmonic response — strain</figcaption></figure></div>
+      <a href="tennis-ball-launcher.html" class="project-card">
+        <div class="card-img">
+          <img src="https://myportfolioreazwan.com/wp-content/uploads/2026/05/screenshot-2026-04-20-004345-9.png" alt="Tennis Launcher" loading="lazy">
         </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </div>
-    </div>
-    <div>
-      <h3>FEA — Static &amp; Harmonic</h3>
-      <p>A 4,200&nbsp;N vertical load was applied, representing real-world suspension loading. Results confirmed all three brief objectives: peak stress at just 13% of A356 yield strength (16.3&nbsp;MPa of 125&nbsp;MPa), maximum deformation under 0.02&nbsp;mm, and safety factors of 5–15 across the component.</p>
-      <p>Harmonic response analysis found critical frequency peaks in the 400–2,000&nbsp;Hz engine vibration range and near 5,000&nbsp;Hz from tyre imbalance, which are the regions where lightweight aluminium knuckles are most vulnerable to fatigue and joint loosening. The analysis revealed that the geometry avoids the worst resonance modes, meeting the frequency objectives.</p>
-    </div>
-  </div>
+        <h3>Dissertation: Tennis Ball Launcher</h3>
+        <p>Designed, manufactured and tested a dual-wheel BLDC launcher exploiting the Magnus effect within a £300 budget. Modelled in SolidWorks, FDM-printed in PETG. Custom 4:1 planetary gearbox delivering 1.62 Nm torque, validated at 30–40 mph.</p>
+      </a>
 
-  <!-- Additive Manufacture -->
-  <div class="row-2col" style="grid-template-columns: 47% 53%;">
-    <div class="img-card">
-      <div class="swiper" id="sw-am">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/3d2.png" alt="Sliced model (line type)"><figcaption>Sliced model (line type)</figcaption></figure></div>
-          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2026/05/layer-line-400-780.png" alt="Layer 400 of 740"><figcaption>Layer 400 of 740</figcaption></figure></div>
-          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/3d1.png" alt="Print orientations"><figcaption>Print orientations</figcaption></figure></div>
-          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/picture13.jpg" alt="Printed PLA prototype"><figcaption>Printed PLA prototype</figcaption></figure></div>
+      <a href="submarine-cfd-analysis.html" class="project-card">
+        <div class="card-img">
+          <img src="https://myportfolioreazwan.com/wp-content/uploads/2026/09/Screenshot-2026-03-19-134854-1024x357.png" alt="Submarine CFD" loading="lazy">
         </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </div>
-    </div>
-    <div>
-      <h3>Additive Manufacture Feasibility</h3>
-      <p>A PLA prototype was 3D printed for shape verification and physical display. I evaluated FDM in PPS-CF filament (168&nbsp;MPa tensile, 227&nbsp;°C heat resistance) and DMLS in titanium alloy as high-performance additive manufacturing alternatives.</p>
-      <p>FDM cannot maintain structural integrity under dynamic loads due to polymer material anisotropy. Although DMLS is structurally viable for this component, its slow cycle times make it prohibitively expensive at automotive production scales. Therefore, sand casting with CNC finishing remains the appropriate manufacturing method.</p>
-    </div>
-  </div>
+        <h3>Submarine CFD Analysis</h3>
+        <p>Steady-state RANS CFD of a full-scale submarine at 20 km/h using Ansys Fluent. 6.27M-element mesh; drag converged to ~33,500 N. Stagnation pressure matched theory within 0.03%. Conning tower identified as primary drag source.</p>
+      </a>
 
-  <!-- Die Casting card -->
-  <div class="dc-card">
-    <h3>Die Casting &amp; CNC Machining</h3>
-    <p class="dc-note">Top: An 8-part sand casting mould with M16 clamping and spill catches. Bottom: CNC machining simulation – slot cutting for a bearing retention ring.</p>
-    <div class="dc-inner">
-      <div class="dc-gallery">
-        <img src="https://myportfolioreazwan.com/wp-content/uploads/2026/05/picture7.jpg" alt="Die casting mould" loading="lazy">
-        <img src="https://myportfolioreazwan.com/wp-content/uploads/2026/05/mouldcastingpicturewithclampig2.png" alt="Sand casting mould" loading="lazy">
-        <img src="https://myportfolioreazwan.com/wp-content/uploads/2026/05/cnc-machine.png" alt="CNC machining simulation" loading="lazy">
-        <img src="https://myportfolioreazwan.com/wp-content/uploads/2026/05/cnc-machine-2-.png" alt="CNC slot cutting" loading="lazy">
+      <div class="project-card">
+        <div class="card-img">
+          <img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/picture1.png" alt="IMechE" loading="lazy">
+        </div>
+        <h3>IMechE Design Challenge</h3>
+        <p>Led a six-engineer team to design an autonomous wall-impact return vehicle for IMechE 2023–24. Rack-and-pinion distance measurement with motor polarity reversal — zero post-activation intervention, within a £40 budget.</p>
       </div>
-      <div class="dc-text">
-        <p>Sand casting with post-process CNC machining was chosen as the primary production method, with a die-cast variant created as a high-volume option. Mounting holes were removed from the cast shape and machined to tolerance by CNC in a subsequent operation. The sand casting mould was built as an 8-part assembly with M16 fastening features, pouring holes, and recessed spill catches.</p>
-        <p>Draft angles of 2–3° for sand casting and 0.5–1° for die casting were used throughout, with A356's 6.5% linear shrinkage factored into the cavity geometry.</p>
-        <p>After casting, CNC machining was used to finish all key faces and bores, resulting in the best balance of cost, precision, and scalability for a road-vehicle production component.</p>
-      </div>
-    </div>
-  </div>
 
-  <!-- Project brief (no link — contains personal contact details) -->
-  <div class="brief-section">
-    <p class="brief-lbl">Original project brief</p>
-    <div class="brief-card">
-      <div class="brief-icon">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c8a86a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"></path>
-          <polyline points="14 2 14 8 20 8"></polyline>
-          <line x1="16" y1="13" x2="8" y2="13"></line>
-          <line x1="16" y1="17" x2="8" y2="17"></line>
-        </svg>
+      <div class="project-card">
+        <div class="card-img">
+          <img src="https://myportfolioreazwan.com/wp-content/uploads/2026/09/Screenshot-2026-03-27-172239.png" alt="Gantry Crane" loading="lazy">
+        </div>
+        <h3>Portable Gantry Crane</h3>
+        <p>Designed and FEA-validated a portable gantry crane to BS EN 1991/1993. Bending stress 1.40 MPa (FoS = 253), deflection 0.014 mm (FoS = 167). ANSYS FEA validated within 1%. Modal analysis confirmed no resonance risk. Drawings to BS 8888.</p>
       </div>
-      <div>
-        <div class="brief-meta">ME5016 — Kingston University &times; Jaguar Land Rover</div>
-        <div class="brief-title">Industry Live Brief — Rear Suspension Knuckle Design</div>
-        <div class="brief-sub">Set by Ravi Londhe, Lead CAE Simulation Automation Engineer</div>
+
+      <div class="project-card">
+        <div class="card-img">
+          <img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/image-5.png" alt="Wind Tunnel" loading="lazy">
+        </div>
+        <h3>Wind Tunnel</h3>
+        <p>Designed and built a wind tunnel using 3D-printed components, 12V DC fans, and ultrasonic misters. Arduino and ESP32 for real-time control; results validated with ANSYS/SolidWorks CFD simulations to analyse aerodynamic performance.</p>
       </div>
+
     </div>
   </div>
 
-</div>
+  <!-- ── Certificates ── -->
+  <div class="section-wrap">
+    <h2 class="section-h2">My Certificates &amp; Education</h2>
+    <div class="cert-wrap">
+      <div class="cert-track-outer">
+        <div class="cert-track" id="certTrack">
+          <div class="cert-slide">
+            <img src="https://myportfolioreazwan.com/wp-content/uploads/2026/06/Screenshot-2026-06-06-154319.jpg" alt="Certificate" loading="lazy">
+          </div>
+          <div class="cert-slide">
+            <img src="https://myportfolioreazwan.com/wp-content/uploads/2026/06/Screenshot-2026-06-06-154424.jpg" alt="Certificate" loading="lazy">
+          </div>
+          <div class="cert-slide">
+            <img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/image-10.png" alt="Solidworks CWSA" loading="lazy">
+            <p class="cert-caption">Solidworks CWSA</p>
+          </div>
+          <div class="cert-slide">
+            <img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/screenshot-2025-04-26-052231.jpg" alt="APM PFQ Certificate" loading="lazy">
+            <p class="cert-caption">APM PFQ Management Certificate</p>
+          </div>
+        </div>
+      </div>
+      <button class="cert-btn cert-prev" onclick="moveCert(-1)" aria-label="Previous">&#8592;</button>
+      <button class="cert-btn cert-next" onclick="moveCert(1)" aria-label="Next">&#8594;</button>
+    </div>
+  </div>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- ── Expertise ── -->
+  <div class="section-wrap">
+    <h2 class="section-h2">My Expertise</h2>
+    <div class="expertise-grid">
+      <div class="expertise-item">
+        <img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/image-15.png" alt="3D Modeling" loading="lazy">
+        <h3>3D Modeling</h3>
+        <p>Proficient in parametric CAD and full assembly modelling with SolidWorks (CSWP certified) and Autodesk Fusion. Experienced in creating simulation-ready geometry for FEA and CFD analysis, engineering drawings in accordance with BS 8888, design-for-manufacture (DFM), and mould design for functional prototypes.</p>
+      </div>
+      <div class="expertise-item">
+        <img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/image.png" alt="Electronics &amp; Embedded Systems" loading="lazy">
+        <h3>Electronics &amp; Embedded Systems</h3>
+        <p>Skilled in circuit design (PCB/breadboard), embedded programming (C++, MicroPython, Python), and prototyping with Arduino/ESP32. Experienced in IoT, sensor systems, and firmware development for real-world applications.</p>
+      </div>
+      <div class="expertise-item">
+        <img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/image-11.png" alt="Machine Operation" loading="lazy">
+        <h3>Machine Operation</h3>
+        <p>Proficient in subtractive and additive manufacturing processes, such as CNC machining (3-5 axis milling/drilling), laser cutting/engraving, and additive manufacturing (FDM, resin, SLS). CSWA-AM Certified. Basic experience in sheet metal fabrication, including forming, bending, and designing for manufacturing.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Contact ── -->
+  <div class="section-wrap" id="contact">
+    <h2 class="section-h2">Contact me</h2>
+    <!-- Replace YOUR_FORM_ID after signing up free at formspree.io -->
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+      <div class="form-group">
+        <label for="name">Name <span class="req">*</span></label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email <span class="req">*</span></label>
+        <input type="email" id="email" name="_replyto" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5"></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+</main>
+
 <script>
-  const cfg = {
-    loop: true,
-    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
-    pagination: { el: '.swiper-pagination', clickable: true },
-  };
-  new Swiper('#sw-model', cfg);
-  new Swiper('#sw-fea', cfg);
-  new Swiper('#sw-am', cfg);
+  let certIdx = 0;
+  const track = document.getElementById('certTrack');
+  const total = track.querySelectorAll('.cert-slide').length;
+  function moveCert(dir) {
+    certIdx = (certIdx + dir + total) % total;
+    track.style.transform = 'translateX(-' + (certIdx * 100) + '%)';
+  }
 </script>
 
 </body>

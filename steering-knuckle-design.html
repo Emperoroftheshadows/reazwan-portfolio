@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steering Knuckle Design — Reazwan Ahmed</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    :root { --accent: #c8a86a; }
+    .proj-tag { background: rgba(200,168,106,0.12); color: var(--accent); border: 1px solid rgba(200,168,106,0.3); }
+    .img-card:hover { border-color: rgba(200,168,106,0.4); box-shadow: 0 6px 28px rgba(200,168,106,0.15); }
+    .tech-divider { color: var(--accent); opacity: 1; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.55); }
+    .dc-note { border-left-color: var(--accent); }
+    .brief-meta { color: var(--accent); }
+    .brief-icon { background: rgba(200,168,106,0.1); border: 1px solid rgba(200,168,106,0.25); }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="site-name">Reazwan Ahmed</a>
+    <nav class="header-nav">
+      <a href="https://www.linkedin.com/in/reazwan-ahmed-b63a71216/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://makerworld.com/en/@ShadowLord" target="_blank" rel="noopener">MakerWorld</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-wrap">
+
+  <a href="index.html" class="back-link">&#8592; Back to Portfolio</a>
+
+  <!-- Hero -->
+  <div class="proj-hero" style="grid-template-columns: 50% 50%;">
+    <div>
+      <img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/image-1.png"
+           alt="JLR rear suspension knuckle in assembly"
+           style="width:100%; border-radius:6px;">
+    </div>
+    <div>
+      <h1>JLR Suspension Knuckle</h1>
+      <span class="proj-tag">Industry Live Brief &middot; JLR &times; Kingston University</span>
+      <p>Ravi Londhe (Lead CAE Simulation Automation Engineer) from Jaguar Land Rover assigned our team a live industry brief: create a one-piece suspension knuckle for use in an automotive suspension system that meets three performance targets: mass reduction, structural stiffness, and natural frequency. Working on a five-person team, I was in charge of structural FEA and additive manufacturing feasibility research.</p>
+      <p>The knuckle was redesigned in A356 aluminium (66% mass reduction compared to the original cast steel baseline, with sand casting and post-process CNC machining chosen as the best manufacturing method). ANSYS Workbench validated the design exceeded all three objectives: peak stress at 13% of material yield, deformation &lt; 0.02 mm, and safety factors above 5 under static and harmonic loading.</p>
+    </div>
+  </div>
+
+  <p class="tech-divider">Technical Breakdown</p>
+
+  <!-- Model & Assembly -->
+  <div class="row-2col" style="grid-template-columns: 47% 53%;">
+    <div class="img-card">
+      <div class="swiper" id="sw-model">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/picture4-1.png" alt="Assembly"><figcaption>Assembly</figcaption></figure></div>
+          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/picture5-1.png" alt="Assembly"><figcaption>Assembly</figcaption></figure></div>
+          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/picture6-1.png" alt="Assembly"><figcaption>Assembly</figcaption></figure></div>
+          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/picture2.png" alt="3D Model"><figcaption>3D Model</figcaption></figure></div>
+          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/picture3-1.png" alt="3D Model"><figcaption>3D Model</figcaption></figure></div>
+          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2026/05/part-drawing.png" alt="Engineering Drawing"><figcaption>Engineering Drawing</figcaption></figure></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+    <div>
+      <h3>Model &amp; Assembly</h3>
+      <p class="sm">The knuckle was designed from scratch in Fusion 360, with supporting suspension components modelled in SolidWorks. Both were assembled into a representative suspension system for integration validation, ensuring proper fitting and clearance at all mounting interfaces before going into production.</p>
+      <p>Industry-standard design methods were used throughout: precise draft angles for casting, tolerancing on all mating faces, and geometry suited for fabrication and assembly. A fully detailed engineering drawing was created, ready to be handed over to the manufacturer.</p>
+    </div>
+  </div>
+
+  <!-- FEA -->
+  <div class="row-2col" style="grid-template-columns: 47% 53%;">
+    <div class="img-card">
+      <div class="swiper" id="sw-fea">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/picture7-1.png" alt="Mesh"><figcaption>Mesh</figcaption></figure></div>
+          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/picture9.png" alt="Force / Load"><figcaption>Force / Load</figcaption></figure></div>
+          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/equivalent-von-mises-stress1.png" alt="Von Mises stress"><figcaption>Von Mises stress</figcaption></figure></div>
+          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/equivalent-von-mises-stress.png" alt="Von Mises stress — critical region"><figcaption>Von Mises stress — critical region</figcaption></figure></div>
+          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/picture12.png" alt="Total deformation"><figcaption>Total deformation</figcaption></figure></div>
+          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/picture11.png" alt="Total deformation — detail"><figcaption>Total deformation — detail</figcaption></figure></div>
+          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/equivalent-von-mises-strain2.png" alt="Normal strain"><figcaption>Normal strain</figcaption></figure></div>
+          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/equivalent-von-mises-strain.png" alt="Normal strain — critical region"><figcaption>Normal strain — critical region</figcaption></figure></div>
+          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2026/05/harnoniuc-rsponse-stress-1.png" alt="Harmonic response — stress"><figcaption>Harmonic response — stress</figcaption></figure></div>
+          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2026/05/harnoniuc-rsponse-deformation.png" alt="Harmonic response — deformation"><figcaption>Harmonic response — deformation</figcaption></figure></div>
+          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2026/05/harnoniuc-rsponse-strain.png" alt="Harmonic response — strain"><figcaption>Harmonic response — strain</figcaption></figure></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+    <div>
+      <h3>FEA — Static &amp; Harmonic</h3>
+      <p>A 4,200&nbsp;N vertical load was applied, representing real-world suspension loading. Results confirmed all three brief objectives: peak stress at just 13% of A356 yield strength (16.3&nbsp;MPa of 125&nbsp;MPa), maximum deformation under 0.02&nbsp;mm, and safety factors of 5–15 across the component.</p>
+      <p>Harmonic response analysis found critical frequency peaks in the 400–2,000&nbsp;Hz engine vibration range and near 5,000&nbsp;Hz from tyre imbalance, which are the regions where lightweight aluminium knuckles are most vulnerable to fatigue and joint loosening. The analysis revealed that the geometry avoids the worst resonance modes, meeting the frequency objectives.</p>
+    </div>
+  </div>
+
+  <!-- Additive Manufacture -->
+  <div class="row-2col" style="grid-template-columns: 47% 53%;">
+    <div class="img-card">
+      <div class="swiper" id="sw-am">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/3d2.png" alt="Sliced model (line type)"><figcaption>Sliced model (line type)</figcaption></figure></div>
+          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2026/05/layer-line-400-780.png" alt="Layer 400 of 740"><figcaption>Layer 400 of 740</figcaption></figure></div>
+          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/3d1.png" alt="Print orientations"><figcaption>Print orientations</figcaption></figure></div>
+          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/picture13.jpg" alt="Printed PLA prototype"><figcaption>Printed PLA prototype</figcaption></figure></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+    <div>
+      <h3>Additive Manufacture Feasibility</h3>
+      <p>A PLA prototype was 3D printed for shape verification and physical display. I evaluated FDM in PPS-CF filament (168&nbsp;MPa tensile, 227&nbsp;°C heat resistance) and DMLS in titanium alloy as high-performance additive manufacturing alternatives.</p>
+      <p>FDM cannot maintain structural integrity under dynamic loads due to polymer material anisotropy. Although DMLS is structurally viable for this component, its slow cycle times make it prohibitively expensive at automotive production scales. Therefore, sand casting with CNC finishing remains the appropriate manufacturing method.</p>
+    </div>
+  </div>
+
+  <!-- Die Casting card -->
+  <div class="dc-card">
+    <h3>Die Casting &amp; CNC Machining</h3>
+    <p class="dc-note">Top: An 8-part sand casting mould with M16 clamping and spill catches. Bottom: CNC machining simulation – slot cutting for a bearing retention ring.</p>
+    <div class="dc-inner">
+      <div class="dc-gallery">
+        <img src="https://myportfolioreazwan.com/wp-content/uploads/2026/05/picture7.jpg" alt="Die casting mould" loading="lazy">
+        <img src="https://myportfolioreazwan.com/wp-content/uploads/2026/05/mouldcastingpicturewithclampig2.png" alt="Sand casting mould" loading="lazy">
+        <img src="https://myportfolioreazwan.com/wp-content/uploads/2026/05/cnc-machine.png" alt="CNC machining simulation" loading="lazy">
+        <img src="https://myportfolioreazwan.com/wp-content/uploads/2026/05/cnc-machine-2-.png" alt="CNC slot cutting" loading="lazy">
+      </div>
+      <div class="dc-text">
+        <p>Sand casting with post-process CNC machining was chosen as the primary production method, with a die-cast variant created as a high-volume option. Mounting holes were removed from the cast shape and machined to tolerance by CNC in a subsequent operation. The sand casting mould was built as an 8-part assembly with M16 fastening features, pouring holes, and recessed spill catches.</p>
+        <p>Draft angles of 2–3° for sand casting and 0.5–1° for die casting were used throughout, with A356's 6.5% linear shrinkage factored into the cavity geometry.</p>
+        <p>After casting, CNC machining was used to finish all key faces and bores, resulting in the best balance of cost, precision, and scalability for a road-vehicle production component.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project brief (no link — contains personal contact details) -->
+  <div class="brief-section">
+    <p class="brief-lbl">Original project brief</p>
+    <div class="brief-card">
+      <div class="brief-icon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c8a86a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+        </svg>
+      </div>
+      <div>
+        <div class="brief-meta">ME5016 — Kingston University &times; Jaguar Land Rover</div>
+        <div class="brief-title">Industry Live Brief — Rear Suspension Knuckle Design</div>
+        <div class="brief-sub">Set by Ravi Londhe, Lead CAE Simulation Automation Engineer</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const cfg = {
+    loop: true,
+    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+    pagination: { el: '.swiper-pagination', clickable: true },
+  };
+  new Swiper('#sw-model', cfg);
+  new Swiper('#sw-fea', cfg);
+  new Swiper('#sw-am', cfg);
+</script>
+
+</body>
+</html>

@@ -5,7 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reazwan Ahmed</title>
   <meta name="description" content="First Class BEng Mechanical Engineering graduate — FEA, CFD, CAD, and product design.">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Portfolio carousel */
+    .portfolio-section { text-align: center; }
+    .portfolio-section .section-h2 { text-align: center; }
+    .portfolio-swiper { padding-bottom: 48px !important; }
+    .portfolio-swiper .swiper-slide { height: auto; display: flex; }
+    .portfolio-swiper .project-card { flex: 1; display: flex; flex-direction: column; }
+    .portfolio-swiper .project-card p { flex: 1; }
+    .portfolio-swiper .swiper-button-prev,
+    .portfolio-swiper .swiper-button-next {
+      top: calc(50% - 24px);
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 50%;
+      width: 38px; height: 38px;
+      --swiper-navigation-size: 16px;
+    }
+    .portfolio-swiper .swiper-button-prev { left: 0; }
+    .portfolio-swiper .swiper-button-next { right: 0; }
+    .portfolio-swiper .swiper-pagination-bullet { background: rgba(255,255,255,0.35) !important; }
+    .portfolio-swiper .swiper-pagination-bullet-active { background: var(--text) !important; }
+  </style>
 </head>
 <body>
 
@@ -21,7 +44,7 @@
 
 <main>
 
-  <!-- ── Hero ── -->
+  <!-- Hero -->
   <div class="hero">
     <div class="hero-photo">
       <img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/1744772656297.jpg" alt="Reazwan Ahmed" loading="lazy">
@@ -35,67 +58,84 @@
         <a href="https://www.linkedin.com/in/reazwan-ahmed-b63a71216/" target="_blank" rel="noopener">LinkedIn</a>
         <a href="#" target="_blank">Instagram</a>
       </div>
-      <a href="https://myportfolioreazwan.com/wp-content/uploads/2025/04/REAZWAN-CV.pdf" target="_blank" rel="noopener" class="cv-btn">Download CV – Reazwan Ahmed</a>
+      <a href="https://myportfolioreazwan.com/wp-content/uploads/2025/04/REAZWAN-CV.pdf" target="_blank" rel="noopener" class="cv-btn">Download CV &ndash; Reazwan Ahmed</a>
     </div>
   </div>
 
-  <!-- ── Portfolio ── -->
-  <div class="section-wrap" id="portfolio">
+  <!-- Portfolio Carousel -->
+  <div class="section-wrap portfolio-section" id="portfolio">
     <h2 class="section-h2">Portfolio Projects &amp; Designs</h2>
-    <div class="projects-grid">
+    <div class="swiper portfolio-swiper">
+      <div class="swiper-wrapper">
 
-      <a href="steering-knuckle-design.html" class="project-card">
-        <div class="card-img">
-          <img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/image-1.png" alt="JLR Knuckle" loading="lazy">
+        <div class="swiper-slide">
+          <a href="steering-knuckle-design.html" class="project-card">
+            <div class="card-img">
+              <img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/image-1.png" alt="JLR Knuckle" loading="lazy">
+            </div>
+            <h3>Steering Knuckle Design</h3>
+            <p>Redesigned a JLR rear suspension knuckle from cast steel to A356 aluminium &mdash; ~66% weight reduction. Validated with static and frequency-response FEA in ANSYS. Max stress at 13% of yield, FoS above 5. Led DFMEA across a five-person team.</p>
+          </a>
         </div>
-        <h3>Steering Knuckle Design</h3>
-        <p>Redesigned a JLR rear suspension knuckle from cast steel to A356 aluminium — ~66% weight reduction. Validated with static and frequency-response FEA in ANSYS. Max stress at 13% of yield, FoS above 5. Led DFMEA across a five-person team.</p>
-      </a>
 
-      <a href="tennis-ball-launcher.html" class="project-card">
-        <div class="card-img">
-          <img src="https://myportfolioreazwan.com/wp-content/uploads/2026/05/screenshot-2026-04-20-004345-9.png" alt="Tennis Launcher" loading="lazy">
+        <div class="swiper-slide">
+          <a href="tennis-ball-launcher.html" class="project-card">
+            <div class="card-img">
+              <img src="https://myportfolioreazwan.com/wp-content/uploads/2026/05/screenshot-2026-04-20-004345-9.png" alt="Tennis Launcher" loading="lazy">
+            </div>
+            <h3>Dissertation: Tennis Ball Launcher</h3>
+            <p>Designed, manufactured and tested a dual-wheel BLDC launcher exploiting the Magnus effect within a &pound;300 budget. Modelled in SolidWorks, FDM-printed in PETG. Custom 4:1 planetary gearbox delivering 1.62 Nm torque, validated at 30&ndash;40 mph.</p>
+          </a>
         </div>
-        <h3>Dissertation: Tennis Ball Launcher</h3>
-        <p>Designed, manufactured and tested a dual-wheel BLDC launcher exploiting the Magnus effect within a £300 budget. Modelled in SolidWorks, FDM-printed in PETG. Custom 4:1 planetary gearbox delivering 1.62 Nm torque, validated at 30–40 mph.</p>
-      </a>
 
-      <a href="submarine-cfd-analysis.html" class="project-card">
-        <div class="card-img">
-          <img src="https://myportfolioreazwan.com/wp-content/uploads/2026/09/Screenshot-2026-03-19-134854-1024x357.png" alt="Submarine CFD" loading="lazy">
+        <div class="swiper-slide">
+          <a href="submarine-cfd-analysis.html" class="project-card">
+            <div class="card-img">
+              <img src="https://myportfolioreazwan.com/wp-content/uploads/2026/09/Screenshot-2026-03-19-134854-1024x357.png" alt="Submarine CFD" loading="lazy">
+            </div>
+            <h3>Submarine CFD Analysis</h3>
+            <p>Steady-state RANS CFD of a full-scale submarine at 20 km/h using Ansys Fluent. 6.27M-element mesh; drag converged to ~33,500 N. Stagnation pressure matched theory within 0.03%. Conning tower identified as primary drag source.</p>
+          </a>
         </div>
-        <h3>Submarine CFD Analysis</h3>
-        <p>Steady-state RANS CFD of a full-scale submarine at 20 km/h using Ansys Fluent. 6.27M-element mesh; drag converged to ~33,500 N. Stagnation pressure matched theory within 0.03%. Conning tower identified as primary drag source.</p>
-      </a>
 
-      <div class="project-card">
-        <div class="card-img">
-          <img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/picture1.png" alt="IMechE" loading="lazy">
+        <div class="swiper-slide">
+          <div class="project-card">
+            <div class="card-img">
+              <img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/picture1.png" alt="IMechE" loading="lazy">
+            </div>
+            <h3>IMechE Design Challenge</h3>
+            <p>Led a six-engineer team to design an autonomous wall-impact return vehicle for IMechE 2023&ndash;24. Rack-and-pinion distance measurement with motor polarity reversal &mdash; zero post-activation intervention, within a &pound;40 budget.</p>
+          </div>
         </div>
-        <h3>IMechE Design Challenge</h3>
-        <p>Led a six-engineer team to design an autonomous wall-impact return vehicle for IMechE 2023–24. Rack-and-pinion distance measurement with motor polarity reversal — zero post-activation intervention, within a £40 budget.</p>
+
+        <div class="swiper-slide">
+          <div class="project-card">
+            <div class="card-img">
+              <img src="https://myportfolioreazwan.com/wp-content/uploads/2026/09/Screenshot-2026-03-27-172239.png" alt="Gantry Crane" loading="lazy">
+            </div>
+            <h3>Portable Gantry Crane</h3>
+            <p>Designed and FEA-validated a portable gantry crane to BS EN 1991/1993. Bending stress 1.40 MPa (FoS = 253), deflection 0.014 mm (FoS = 167). ANSYS FEA validated within 1%. Modal analysis confirmed no resonance risk. Drawings to BS 8888.</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="project-card">
+            <div class="card-img">
+              <img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/image-5.png" alt="Wind Tunnel" loading="lazy">
+            </div>
+            <h3>Wind Tunnel</h3>
+            <p>Designed and built a wind tunnel using 3D-printed components, 12V DC fans, and ultrasonic misters. Arduino and ESP32 for real-time control; results validated with ANSYS/SolidWorks CFD simulations to analyse aerodynamic performance.</p>
+          </div>
+        </div>
+
       </div>
-
-      <div class="project-card">
-        <div class="card-img">
-          <img src="https://myportfolioreazwan.com/wp-content/uploads/2026/09/Screenshot-2026-03-27-172239.png" alt="Gantry Crane" loading="lazy">
-        </div>
-        <h3>Portable Gantry Crane</h3>
-        <p>Designed and FEA-validated a portable gantry crane to BS EN 1991/1993. Bending stress 1.40 MPa (FoS = 253), deflection 0.014 mm (FoS = 167). ANSYS FEA validated within 1%. Modal analysis confirmed no resonance risk. Drawings to BS 8888.</p>
-      </div>
-
-      <div class="project-card">
-        <div class="card-img">
-          <img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/image-5.png" alt="Wind Tunnel" loading="lazy">
-        </div>
-        <h3>Wind Tunnel</h3>
-        <p>Designed and built a wind tunnel using 3D-printed components, 12V DC fans, and ultrasonic misters. Arduino and ESP32 for real-time control; results validated with ANSYS/SolidWorks CFD simulations to analyse aerodynamic performance.</p>
-      </div>
-
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
   </div>
 
-  <!-- ── Certificates ── -->
+  <!-- Certificates -->
   <div class="section-wrap">
     <h2 class="section-h2">My Certificates &amp; Education</h2>
     <div class="cert-wrap">
@@ -122,7 +162,7 @@
     </div>
   </div>
 
-  <!-- ── Expertise ── -->
+  <!-- Expertise -->
   <div class="section-wrap">
     <h2 class="section-h2">My Expertise</h2>
     <div class="expertise-grid">
@@ -132,7 +172,7 @@
         <p>Proficient in parametric CAD and full assembly modelling with SolidWorks (CSWP certified) and Autodesk Fusion. Experienced in creating simulation-ready geometry for FEA and CFD analysis, engineering drawings in accordance with BS 8888, design-for-manufacture (DFM), and mould design for functional prototypes.</p>
       </div>
       <div class="expertise-item">
-        <img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/image.png" alt="Electronics &amp; Embedded Systems" loading="lazy">
+        <img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/image.png" alt="Electronics" loading="lazy">
         <h3>Electronics &amp; Embedded Systems</h3>
         <p>Skilled in circuit design (PCB/breadboard), embedded programming (C++, MicroPython, Python), and prototyping with Arduino/ESP32. Experienced in IoT, sensor systems, and firmware development for real-world applications.</p>
       </div>
@@ -144,10 +184,9 @@
     </div>
   </div>
 
-  <!-- ── Contact ── -->
+  <!-- Contact -->
   <div class="section-wrap" id="contact">
     <h2 class="section-h2">Contact me</h2>
-    <!-- Replace YOUR_FORM_ID after signing up free at formspree.io -->
     <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
       <div class="form-group">
         <label for="name">Name <span class="req">*</span></label>
@@ -167,7 +206,28 @@
 
 </main>
 
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
+  // Portfolio carousel — 3 per view
+  new Swiper('.portfolio-swiper', {
+    slidesPerView: 3,
+    spaceBetween: 18,
+    navigation: {
+      nextEl: '.portfolio-swiper .swiper-button-next',
+      prevEl: '.portfolio-swiper .swiper-button-prev',
+    },
+    pagination: {
+      el: '.portfolio-swiper .swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      0:   { slidesPerView: 1 },
+      620: { slidesPerView: 2 },
+      900: { slidesPerView: 3 },
+    },
+  });
+
+  // Certificates carousel
   let certIdx = 0;
   const track = document.getElementById('certTrack');
   const total = track.querySelectorAll('.cert-slide').length;

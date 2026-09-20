@@ -15,35 +15,52 @@
     .brief-meta { color: var(--accent); }
     .brief-icon { background: rgba(200,168,106,0.1); border: 1px solid rgba(200,168,106,0.25); }
 
-    /* Keep every technical card's image area and copy area aligned. */
+    /* Match the three technical cards while preserving Swiper's required layout. */
     .tech-cards-3 { align-items: stretch; }
     .tech-card { display: flex; flex-direction: column; height: 100%; }
-    .tech-card .swiper {
+    .tech-card > .swiper {
       height: 520px;
       flex: 0 0 520px;
-      display: flex;
-      align-items: center;
       position: relative;
+      overflow: hidden;
     }
-    .tech-card .swiper-wrapper { height: 100%; align-items: center; }
-    .tech-card .swiper-slide { height: 100%; display: flex; align-items: center; }
-    .tech-card .swiper-slide figure {
-      width: 100%;
+    .tech-card > .swiper .swiper-slide {
       height: 100%;
       display: flex;
-      flex-direction: column;
+      align-items: center;
       justify-content: center;
     }
-    .tech-card .swiper-slide img {
+    .tech-card > .swiper .swiper-slide figure {
       width: 100%;
-      height: calc(100% - 34px);
-      object-fit: contain;
+      height: 100%;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
     }
-    .tech-card .swiper-slide figcaption { flex: 0 0 34px; }
+    .tech-card > .swiper .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: calc(100% - 34px);
+      object-fit: contain;
+      margin: 0 auto;
+    }
+    .tech-card > .swiper .swiper-slide figcaption {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 34px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
     .tech-card h3 { min-height: 26px; }
 
     @media (max-width: 860px) {
-      .tech-card .swiper { height: 420px; flex-basis: 420px; }
+      .tech-card > .swiper { height: 420px; flex-basis: 420px; }
     }
   </style>
 </head>

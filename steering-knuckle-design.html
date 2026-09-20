@@ -42,16 +42,15 @@
     <div>
       <h1>JLR Suspension Knuckle</h1>
       <span class="proj-tag">Industry Live Brief &middot; JLR &times; Kingston University</span>
-      <p>Ravi Londhe (Lead CAE Simulation Automation Engineer) from Jaguar Land Rover assigned our team a live industry brief: create a one-piece suspension knuckle for use in an automotive suspension system that meets three performance targets: mass reduction, structural stiffness, and natural frequency. Working on a five-person team, I was in charge of structural FEA and additive manufacturing feasibility research.</p>
-      <p>The knuckle was redesigned in A356 aluminium (66% mass reduction compared to the original cast steel baseline, with sand casting and post-process CNC machining chosen as the best manufacturing method). ANSYS Workbench validated the design exceeded all three objectives: peak stress at 13% of material yield, deformation &lt; 0.02 mm, and safety factors above 5 under static and harmonic loading.</p>
+      <p>Ravi Londhe (Lead CAE Simulation Automation Engineer) from Jaguar Land Rover assigned our team a live industry brief: create a one-piece suspension knuckle for use in an automotive suspension assembly, reducing mass while maintaining structural performance and manufacturability.</p>
+      <p>The knuckle was redesigned in A356 aluminium (66% mass reduction compared to the original cast steel baseline, with sand casting and post-process CNC machining chosen as the best manufacturing route for the required component geometry and strength).</p>
     </div>
   </div>
 
-  <p class="tech-divider">Technical Breakdown</p>
+  <p class="tech-divider">Technical breakdown</p>
 
-  <!-- Model & Assembly -->
-  <div class="row-2col" style="grid-template-columns: 47% 53%;">
-    <div class="img-card">
+  <div class="tech-cards-3">
+    <div class="tech-card">
       <div class="swiper" id="sw-model">
         <div class="swiper-wrapper">
           <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/picture4-1.png" alt="Assembly"><figcaption>Assembly</figcaption></figure></div>
@@ -65,46 +64,36 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
       </div>
-    </div>
-    <div>
       <h3>Model &amp; Assembly</h3>
-      <p class="sm">The knuckle was designed from scratch in Fusion 360, with supporting suspension components modelled in SolidWorks. Both were assembled into a representative suspension system for integration validation, ensuring proper fitting and clearance at all mounting interfaces before going into production.</p>
+      <p>The knuckle was designed from scratch in Fusion 360, with supporting suspension components modelled in SolidWorks. Both were assembled into a representative suspension system for integration validation, ensuring proper fitting and clearance at all mounting interfaces before going into production.</p>
       <p>Industry-standard design methods were used throughout: precise draft angles for casting, tolerancing on all mating faces, and geometry suited for fabrication and assembly. A fully detailed engineering drawing was created, ready to be handed over to the manufacturer.</p>
     </div>
-  </div>
 
-  <!-- FEA -->
-  <div class="row-2col" style="grid-template-columns: 47% 53%;">
-    <div class="img-card">
+    <div class="tech-card">
       <div class="swiper" id="sw-fea">
         <div class="swiper-wrapper">
           <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/picture7-1.png" alt="Mesh"><figcaption>Mesh</figcaption></figure></div>
           <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/picture9.png" alt="Force / Load"><figcaption>Force / Load</figcaption></figure></div>
           <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/equivalent-von-mises-stress1.png" alt="Von Mises stress"><figcaption>Von Mises stress</figcaption></figure></div>
-          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/equivalent-von-mises-stress.png" alt="Von Mises stress — critical region"><figcaption>Von Mises stress — critical region</figcaption></figure></div>
+          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/equivalent-von-mises-stress.png" alt="Von Mises stress — critical region"><figcaption>Von Mises stress</figcaption></figure></div>
           <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/picture12.png" alt="Total deformation"><figcaption>Total deformation</figcaption></figure></div>
-          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/picture11.png" alt="Total deformation — detail"><figcaption>Total deformation — detail</figcaption></figure></div>
+          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/picture11.png" alt="Total deformation — detail"><figcaption>Total deformation</figcaption></figure></div>
           <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/equivalent-von-mises-strain2.png" alt="Normal strain"><figcaption>Normal strain</figcaption></figure></div>
-          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/equivalent-von-mises-strain.png" alt="Normal strain — critical region"><figcaption>Normal strain — critical region</figcaption></figure></div>
-          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2026/05/harnoniuc-rsponse-stress-1.png" alt="Harmonic response — stress"><figcaption>Harmonic response — stress</figcaption></figure></div>
-          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2026/05/harnoniuc-rsponse-deformation.png" alt="Harmonic response — deformation"><figcaption>Harmonic response — deformation</figcaption></figure></div>
-          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2026/05/harnoniuc-rsponse-strain.png" alt="Harmonic response — strain"><figcaption>Harmonic response — strain</figcaption></figure></div>
+          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/equivalent-von-mises-strain.png" alt="Normal strain — critical region"><figcaption>Normal strain</figcaption></figure></div>
+          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2026/05/harnoniuc-rsponse-stress-1.png" alt="Harmonic response — stress"><figcaption>Harmonic response</figcaption></figure></div>
+          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2026/05/harnoniuc-rsponse-deformation.png" alt="Harmonic response — deformation"><figcaption>Harmonic response</figcaption></figure></div>
+          <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2026/05/harnoniuc-rsponse-strain.png" alt="Harmonic response — strain"><figcaption>Harmonic response</figcaption></figure></div>
         </div>
         <div class="swiper-pagination"></div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
       </div>
-    </div>
-    <div>
       <h3>FEA — Static &amp; Harmonic</h3>
       <p>A 4,200&nbsp;N vertical load was applied, representing real-world suspension loading. Results confirmed all three brief objectives: peak stress at just 13% of A356 yield strength (16.3&nbsp;MPa of 125&nbsp;MPa), maximum deformation under 0.02&nbsp;mm, and safety factors of 5–15 across the component.</p>
       <p>Harmonic response analysis found critical frequency peaks in the 400–2,000&nbsp;Hz engine vibration range and near 5,000&nbsp;Hz from tyre imbalance, which are the regions where lightweight aluminium knuckles are most vulnerable to fatigue and joint loosening. The analysis revealed that the geometry avoids the worst resonance modes, meeting the frequency objectives.</p>
     </div>
-  </div>
 
-  <!-- Additive Manufacture -->
-  <div class="row-2col" style="grid-template-columns: 47% 53%;">
-    <div class="img-card">
+    <div class="tech-card">
       <div class="swiper" id="sw-am">
         <div class="swiper-wrapper">
           <div class="swiper-slide"><figure><img src="https://myportfolioreazwan.com/wp-content/uploads/2025/04/3d2.png" alt="Sliced model (line type)"><figcaption>Sliced model (line type)</figcaption></figure></div>
@@ -116,8 +105,6 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
       </div>
-    </div>
-    <div>
       <h3>Additive Manufacture Feasibility</h3>
       <p>A PLA prototype was 3D printed for shape verification and physical display. I evaluated FDM in PPS-CF filament (168&nbsp;MPa tensile, 227&nbsp;°C heat resistance) and DMLS in titanium alloy as high-performance additive manufacturing alternatives.</p>
       <p>FDM cannot maintain structural integrity under dynamic loads due to polymer material anisotropy. Although DMLS is structurally viable for this component, its slow cycle times make it prohibitively expensive at automotive production scales. Therefore, sand casting with CNC finishing remains the appropriate manufacturing method.</p>
@@ -136,7 +123,7 @@
         <img src="https://myportfolioreazwan.com/wp-content/uploads/2026/05/cnc-machine-2-.png" alt="CNC slot cutting" loading="lazy">
       </div>
       <div class="dc-text">
-        <p>Sand casting with post-process CNC machining was chosen as the primary production method, with a die-cast variant created as a high-volume option. Mounting holes were removed from the cast shape and machined to tolerance by CNC in a subsequent operation. The sand casting mould was built as an 8-part assembly with M16 fastening features, pouring holes, and recessed spill catches.</p>
+        <p>Sand casting with post-process CNC machining was chosen as the primary production method, with a die-cast variant created as a high-volume option. Mounting holes were removed from the knuckle design and machining pockets added to reduce unnecessary material while improving manufacturability.</p>
         <p>Draft angles of 2–3° for sand casting and 0.5–1° for die casting were used throughout, with A356's 6.5% linear shrinkage factored into the cavity geometry.</p>
         <p>After casting, CNC machining was used to finish all key faces and bores, resulting in the best balance of cost, precision, and scalability for a road-vehicle production component.</p>
       </div>
